@@ -6,13 +6,13 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-		"start": "npm run build:dev && node ./dist/main.js",
-		"build:dev": "./node_modules/.bin/tsc -p ./config/tsconfig.json",
+    "start": "npm run build:dev && node ./dist/main.js",
+    "build:dev": "./node_modules/.bin/tsc -p ./config/tsconfig.json",
     "clean": "./node_modules/.bin/rimraf dist",
     "lint": "./node_modules/.bin/tslint --project config/tsconfig.json --config config/tslint.json",
-		"test": "./node_modules/.bin/jest --config config/jest.json",
-		"prod": "npm run clean && npm run lint && npm run test && npm run build:prod",
-		"build:prod": "./node_modules/.bin/tsc -p ./config/tsconfig.json"
+    "test": "./node_modules/.bin/jest --config config/jest.json",
+    "prod": "npm run clean && npm run lint && npm run test && npm run build:prod",
+    "build:prod": "./node_modules/.bin/tsc -p ./config/tsconfig.json"
   },
   "devDependencies": {
     "jest": "~23.6.0",
