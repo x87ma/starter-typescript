@@ -1,11 +1,9 @@
 {
 	"compilerOptions": {
-		"module": "system",
 		"target": "es5",
 		"noImplicitAny": true,
 		"removeComments": true,
 		"preserveConstEnums": true,
-		"outFile": "../dist/main.js",
 		"sourceMap": true,
 		"esModuleInterop": true,
 		"lib": ["dom", "es2015"],
@@ -21,6 +19,7 @@
 	],
 	"exclude": [
 		"../node_modules",
+		"../build",
 		"../dist",
 		"../**/*.spec.ts"
 	]
